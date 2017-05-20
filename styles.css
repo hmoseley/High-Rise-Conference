@@ -1,0 +1,11 @@
+ @font-face { font-family: AnchorJack; src: url('fonts/AnchorJack.ttf'); } 
+nav{
+    font-family: 'Anchor Jack', sans-serif ;
+    text-transform: uppercase;
+        font-size: 1em;
+    margin: 0 auto; /* This centers the nav element */
+    border: 1px solid 0;
+    border-width: 1px 0;
+    text-align: center;
+    margin: 0 auto; /* This adds a bit of space above the nav element */
+}
