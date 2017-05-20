@@ -1,9 +1,58 @@
 @font-face { font-family: AnchorJack; src: url('fonts/AnchorJack.ttf'); }
 @font-face { font-family: GillSans; src: url('fonts/GillSans.ttc'); }
-    
+
+body {
+    font-family: 'GillSans', sans-serif;
+    font-size: 14px;
+}
+
+.fs1 {
+    font-size: 32px;
+}
+
+.fs2 {
+    font-size: 24px;
+}
+
+.fs3 {
+    font-size: 18px;
+}
+
+.fs4 {
+    font-size: 14px;
+}
+
+.fs5 {
+    font-size: 12p;
+}
+
+.fc-white {
+    color: #fff;
+}
+
+.fc-black {
+    color: #000;
+}
+
+.fc-orange {
+    color: darkorange;
+}
+
+.ff-futura-cond-eb {
+    font-family: "futura-pt-condensed", sans-serif;
+    font-weight: 800;
+}
+
+.ff-gillsans {
+    font-family: 'GillSans', sans-serif;
+}
+
+.ff-anchorjack {
+    font-family: 'Anchor Jack', sans-serif;
+}
 
 nav{
-    font-family: 'Anchor Jack', sans-serif ;
+    
     text-transform: uppercase;
         font-size: 1em;
     margin: 0 auto; /* This centers the nav element */
@@ -11,11 +60,4 @@ nav{
     border-width: 1px 0;
     text-align: center;
     margin: 0 auto; /* This adds a bit of space above the nav element */
-}
-h1 {
-    font-family: "futura-pt-condensed", sans-serif;
-    font-weight: 800;
-}
-h2 {
-    font-family: 'GillSans', sans-serif ;
 }
