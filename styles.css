@@ -1,4 +1,7 @@
- @font-face { font-family: AnchorJack; src: url('fonts/AnchorJack.ttf'); } 
+@font-face { font-family: AnchorJack; src: url('fonts/AnchorJack.ttf'); }
+@font-face { font-family: GillSans; src: url('fonts/GillSans.ttc'); }
+    
+
 nav{
     font-family: 'Anchor Jack', sans-serif ;
     text-transform: uppercase;
@@ -8,4 +11,11 @@ nav{
     border-width: 1px 0;
     text-align: center;
     margin: 0 auto; /* This adds a bit of space above the nav element */
+}
+h1 {
+    font-family: "futura-pt-condensed", sans-serif;
+    font-weight: 800;
+}
+h2 {
+    font-family: 'GillSans', sans-serif ;
 }
