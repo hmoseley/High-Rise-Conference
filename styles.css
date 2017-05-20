@@ -1,11 +1,72 @@
-@font-face { font-family: AnchorJack; src: url('fonts/AnchorJack.ttf'); }
-@font-face { font-family: GillSans; src: url('fonts/GillSans.ttc'); }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End meyer reset */
+
+/* Link to fonts in folder */
+@font-face {
+    font-family: AnchorJack; src: url('fonts/AnchorJack.ttf'); 
+}
+
+@font-face {
+    font-family: GillSans; src: url('fonts/GillSans.ttc'); 
+}
+
+/* Document defaults */
 body {
     font-family: 'GillSans', sans-serif;
     font-size: 14px;
+    line-height: 1.4;
+    color: #3b3b3b;
 }
 
+
+/* Font sizes */
 .fs1 {
     font-size: 32px;
 }
@@ -26,18 +87,20 @@ body {
     font-size: 12p;
 }
 
+/* Font colors */
 .fc-white {
     color: #fff;
 }
 
 .fc-black {
-    color: #000;
+    color: #3b3b3b;
 }
 
 .fc-orange {
     color: darkorange;
 }
 
+/* Font families */
 .ff-futura-cond-eb {
     font-family: "futura-pt-condensed", sans-serif;
     font-weight: 800;
@@ -49,15 +112,9 @@ body {
 
 .ff-anchorjack {
     font-family: 'Anchor Jack', sans-serif;
+    text-transform: uppercase;
 }
 
-nav{
-    
-    text-transform: uppercase;
-        font-size: 1em;
-    margin: 0 auto; /* This centers the nav element */
-    border: 1px solid 0;
-    border-width: 1px 0;
+.ta-center {
     text-align: center;
-    margin: 0 auto; /* This adds a bit of space above the nav element */
 }
