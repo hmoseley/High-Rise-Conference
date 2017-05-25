@@ -119,11 +119,7 @@ body {
 .mobile-ta-center {
 
 }
-
-@media screen only (max-width: 768px) {
-    .mobile-ta-center {
-        text-align: center;
-    }
+   
 .top-nav {
     height: 58px;
     width: 100%;
@@ -138,7 +134,7 @@ body {
     margin: auto;
     justify-content: space-around;
     align-items: center;
-    
+
 }
 
 .nav-li {
@@ -178,17 +174,12 @@ body {
     }
 
     .content-container{
-    
+
     }
-    
+
     .top-nav-mobile {
         display: block;
     }
-}
-
-
-@media only screen and (max-width: 959px) {
-    
 }
 
 @media only screen and (max-width: 959px) {
