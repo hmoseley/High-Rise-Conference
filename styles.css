@@ -63,6 +63,7 @@ body {
     font-size: 14px;
     line-height: 1.4;
     color: #3b3b3b;
+    background-color: #666;
 }
 
 
@@ -119,10 +120,55 @@ body {
     text-align: center;
 }
 
-@media screen only (max-width: 768px) {
+.top-nav {
+    height: 58px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.nav-ul {
+    height: 58px;
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
     
 }
 
-@media screen only (max-width: 479) {
+.nav-li {
+    float: left;
+}
+
+.top-nav-mobile {
+    display: none;
+    height: 58px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.hamburger-container {
+    width: 68px;
+    height: 58px;
+}
+
+.hamburger {
+    width: 30px;
+    height: 20px;
+    margin: 19px;
+}
+
+@media only screen and (max-width: 959px) {
+    .top-nav {
+        display: none;
+    }
+    
+    .top-nav-mobile {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 479px) {
     
 }
