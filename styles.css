@@ -63,6 +63,7 @@ body {
     font-size: 14px;
     line-height: 1.4;
     color: #3b3b3b;
+    background-color: #666;
 }
 
 
@@ -123,8 +124,140 @@ body {
     .mobile-ta-center {
         text-align: center;
     }
+.top-nav {
+    height: 58px;
+    width: 100%;
+    background-color: #fff;
 }
 
-@media screen only (max-width: 479) {
+.nav-ul {
+    height: 58px;
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
     
+}
+
+.nav-li {
+    float: left;
+}
+
+.top-nav-mobile {
+    display: none;
+    height: 58px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.hamburger-container {
+    width: 68px;
+    height: 58px;
+}
+
+.hamburger {
+    width: 30px;
+    height: 20px;
+    margin: 19px;
+}
+
+@media only screen and (max-width: 959px) {
+    .top-nav {
+        display: none;
+    }
+
+    .content-container{
+        @import url(http://fonts.googleapis.com/css?family=Roboto);
+    }
+
+    .mobile-content-container{
+        display: none;
+    }
+    
+    .top-nav-mobile {
+        display: block;
+    }
+}
+
+
+@media only screen and (max-width: 959px) {
+    
+}
+
+@media only screen and (max-width: 959px) {
+    .content-container{
+        display: none;
+    }
+    
+    .mobile-content-container{
+        display: inline-block;
+    }
+    
+    @import url(http://fonts.googleapis.com/css?family=Roboto);
+    body {
+        font-family: 'GillSans', sans-serif;
+        font-size: 12pt;
+        color: #fff;
+        background: #3498db;
+    }
+    span{
+    font-size: 12pt;
+    font-family: 'GillSans', sans-serif;
+    }
+
+    .wrapper {
+    margin: 10% auto;
+    width: 400px;
+    }
+
+    ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+
+    label {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-bottom: none;
+    }
+
+    label:hover {
+    background: #26C281;
+    }
+
+    label.last {
+    border-bottom: 1px solid #fff;
+    }   
+
+    ul ul li {
+    padding: 10px;
+    background: #59ABE3;
+    }
+
+    input[type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+    }
+
+    input[type="checkbox"] ~ ul {
+    height: 0;
+    transform: scaleY(0);
+    }
+
+    input[type="checkbox"]:checked ~ ul {
+    height: 100%;
+    transform-origin: top;
+    transition: transform .2s ease-out;
+    transform: scaleY(1);
+    }
+
+    input[type="checkbox"]:checked + label {
+    background: #26C281;
+    border-bottom: 1px solid #fff;
+    }
 }
