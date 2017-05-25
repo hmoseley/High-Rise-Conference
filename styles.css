@@ -116,10 +116,14 @@ body {
     text-transform: uppercase;
 }
 
-.ta-center {
-    text-align: center;
+.mobile-ta-center {
+
 }
 
+@media screen only (max-width: 768px) {
+    .mobile-ta-center {
+        text-align: center;
+    }
 .top-nav {
     height: 58px;
     width: 100%;
