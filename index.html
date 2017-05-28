@@ -17,19 +17,32 @@
     
     <div class="top-nav">
         <ul class="nav-ul">
-            <li class="nav-li ff-futura-cond-eb fs3">SPEAKERS</li>
-            <li class="nav-li ff-futura-cond-eb fs3">SCHEDULE</li>
-            <li class="nav-li ff-futura-cond-eb fs3">ABOUT</li>
-            <li class="nav-li ff-anchorjack fs1 fc-black">High Rise</li>
-            <li class="nav-li ff-futura-cond-eb fs3">TRAVEL</li>
-            <li class="nav-li ff-futura-cond-eb fs3">MAP</li>
-            <li class="nav-li ff-futura-cond-eb fs3">REGISTER</li>
+            <li class="fl-left ff-futura-cond-eb fs3">SPEAKERS</li>
+            <li class="fl-left ff-futura-cond-eb fs3">SCHEDULE</li>
+            <li class="fl-left ff-futura-cond-eb fs3">ABOUT</li>
+            <li class="fl-left ff-anchorjack fs1 fc-black">High Rise</li>
+            <li class="fl-left ff-futura-cond-eb fs3">TRAVEL</li>
+            <li class="fl-left ff-futura-cond-eb fs3">MAP</li>
+            <li class="fl-left ff-futura-cond-eb fs3">REGISTER</li>
         </ul>
     </div>
     
     <div class="top-nav-mobile">
-        <div class="hamburger-container"><img class="hamburger" src="images/assets/high-rise-hamburger.png"></div>
+        
+        <input class="toggle hide-checkbox fl-left" id="nav-dropdown" type="checkbox">
+        <label for="nav-dropdown" class="hamburger-container"><div class="hamburger-container"><img class="hamburger" src="images/assets/high-rise-hamburger.png" class="hamburger-container"></div></label>
+        
+        <ul class="expand bg-white fc-black">
+            <li class="ff-futura-cond-eb fc-black fs3 hamburger-dropdowns">HOME</li>
+            <li class="ff-futura-cond-eb fc-black fs3 hamburger-dropdowns">SPEAKERS</li>
+            <li class="ff-futura-cond-eb fc-black fs3 hamburger-dropdowns">SCHEDULE</li>
+            <li class="ff-futura-cond-eb fc-black fs3 hamburger-dropdowns">ABOUT</li>
+            <li class="ff-futura-cond-eb fc-black fs3 hamburger-dropdowns">TRAVEL</li>
+            <li class="ff-futura-cond-eb fc-black fs3 hamburger-dropdowns">MAP</li>
+            <li class="ff-futura-cond-eb fc-black fs3 hamburger-dropdowns">REGISTER</li>
+        </ul>
     </div>
+    
 
      <!-- desktop for speakers -->
     <div class="content-container">
@@ -39,19 +52,25 @@
             Friday {4:10pm - 6:00 pm}<br>
             Cal Poly PA
         </div>
+        <div>
+            Charmaine Farber is an assistant professor in Graphic Communication at Cal Poly San Luis Obispo, and teaches user experience design and web/mobile app design. She earned an M.F.A., with honors, in Design from the University of Iowa. She also attended the Savannah College of Art and Design with an Artistic Scholarship and earned her M.A. in Interactive Media Design and Game Development. Her B.F.A. is in Design from the University of Iowa. Farber served as "Education Director – Student Initiatives", and "Membership Director" on the Connecticut Executive Board of Directors of AIGA and also served on the Pittsburgh board of Directors of AIGA.
+        </div>
     </div>
     
     <!-- mobile drop down for speakers -->
     <div class="mobile-content-container wrapper">
-        <ul>
-            <input type="checkbox" id="list-item-1">
-            <label for="list-item-1" class="ff-futura-cond-eb fs3 fc-black">
-                CHARMAINE FARBER <span> <br> Welcome Speech <br>Fridy {4:10pm - 6:00 pm} <br> Cal Poly PAC </span>
-            </label>
-            <ul>
-                <li>Charmaine Farber is an assistant professor in Graphic Communication at Cal Poly San Luis Obispo, and teaches user experience design and web/mobile app design. She earned an M.F.A., with honors, in Design from the University of Iowa. She also attended the Savannah College of Art and Design with an Artistic Scholarship and earned her M.A. in Interactive Media Design and Game Development. Her B.F.A. is in Design from the University of Iowa. Farber served as "Education Director – Student Initiatives", and "Membership Director" on the Connecticut Executive Board of Directors of AIGA and also served on the Pittsburgh board of Directors of AIGA. </li>
-            </ul>
-        </ul>
+        <input class="toggle hide-checkbox" id="speaker-charmaine" type="checkbox">
+        <label for="speaker-charmaine" class="ff-futura-cond-eb fs3 fc-black">
+            <div>
+                CHARMAINE FARBER<br>
+                Welcome Speech <br>
+                Friday {4:10pm - 6:00 pm}<br>
+                Cal Poly PAC
+            </div>
+        </label>
+        <div class="expand">
+            Charmaine Farber is an assistant professor in Graphic Communication at Cal Poly San Luis Obispo, and teaches user experience design and web/mobile app design. She earned an M.F.A., with honors, in Design from the University of Iowa. She also attended the Savannah College of Art and Design with an Artistic Scholarship and earned her M.A. in Interactive Media Design and Game Development. Her B.F.A. is in Design from the University of Iowa. Farber served as "Education Director – Student Initiatives", and "Membership Director" on the Connecticut Executive Board of Directors of AIGA and also served on the Pittsburgh board of Directors of AIGA.
+        </div>
     </div>
 
 </body>

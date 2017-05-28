@@ -116,6 +116,10 @@ body {
     text-transform: uppercase;
 }
 
+.bg-white {
+    background-color: #fff;
+}
+
 .mobile-ta-center {
 
 }
@@ -137,13 +141,16 @@ body {
 
 }
 
-.nav-li {
+.fl-left {
     float: left;
+}
+
+.fl-right {
+    float: right;
 }
 
 .top-nav-mobile {
     display: none;
-    height: 58px;
     width: 100%;
     background-color: #fff;
 }
@@ -151,6 +158,8 @@ body {
 .hamburger-container {
     width: 68px;
     height: 58px;
+    margin: 0;
+    padding: 0;
 }
 
 .hamburger {
@@ -159,7 +168,13 @@ body {
     margin: 19px;
 }
 
-.mobile-content-container{
+.hamburger-dropdowns {
+    width: 100vw;
+    text-align: center;
+    margin: 5px auto;
+}
+
+.mobile-content-container {
     display: none;
 }
 
@@ -168,12 +183,37 @@ body {
     width: 400px;
 }
 
+.expand {
+    max-height: 0px;
+    overflow: hidden;
+    
+    transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: ease-out;
+}
+
+.toggle:checked ~ .expand {
+
+    
+    overflow-y: hidden;
+	max-height: 500px; /* approximate max height */
+
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: ease-out;
+}
+
+.hide-checkbox {
+  display: none;
+  visibility: hidden;
+}
+
 @media only screen and (max-width: 959px) {
     .top-nav {
         display: none;
     }
 
-    .content-container{
+    .content-container {
 
     }
 
@@ -183,67 +223,11 @@ body {
 }
 
 @media only screen and (max-width: 959px) {
-    .content-container{
+    .content-container {
         display: none;
     }
     
-    .mobile-content-container{
+    .mobile-content-container {
         display: block;
-    }
-    
-    span{
-        font-size: 12pt;
-        font-family: 'GillSans', sans-serif;
-    }
-
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    label {
-        display: block;
-        cursor: pointer;
-        padding: 10px;
-        background-color: #26C281;
-    }
-
-    label:hover {
-        background-color: #fab;
-    }
-
-    label.last {
-
-    }   
-
-    ul ul li {
-        padding: 10px;
-        background-color: #59ABE3;
-    }
-
-    input[type="checkbox"] {
-        position: absolute;
-        left: -9999px;
-    }
-
-    input[type="checkbox"] ~ ul {
-        height: 0;
-        transform: scaleY(0);
-    }
-
-    input[type="checkbox"]:checked ~ ul {
-        height: 100%;
-        transform-origin: top;
-        transition: transform .2s ease-out;
-        transform: scaleY(1);
-    }
-
-    input[type="checkbox"]:checked + label {
-        background: #26C281;
-    }
-    
-    input[type="checkbox"]:checked + label:hover {
-        background: #fab;
     }
 }
