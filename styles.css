@@ -119,8 +119,8 @@ body {
     background-color: #fff;
 }
 
-.mobile-ta-center {
-
+.ta-center {
+    text-align: center;
 }
    
 .top-nav {
@@ -175,9 +175,6 @@ body {
 
 .mobile-content-container {
     display: none;
-}
-
-.wrapper {
     margin: 10px auto;
     width: 400px;
 }
@@ -226,6 +223,37 @@ body {
     width:400px;
     margin-left: auto;
     margin-right:auto;
+}
+
+/* Footer-Holland */
+
+.footer{
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+}
+
+.social-wrapper {
+    height: 50px;
+    width: 200px;
+    margin: auto;
+}
+
+.footer img {
+    height: 30px;
+    display: inline-block;
+    float: left;
+    padding-top: 10px;
+    margin: 0 10px;
+    
+    
+}
+
+.footer p {
+    font-size: 10px;
+    
 }
 
 /* START PARALLAX SCROLL */
@@ -297,17 +325,16 @@ body {
 }
 
 p {
-  color: #ede0d5;
-  font-size: 18px;
-  line-height: 150%;
+    font-size: 18px;
+    line-height: 150%;
 }
 
 #hero, .layer {
-  min-height: 800px;
+    min-height: 800px;
 }
 
 .layer-bg {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_bg.jpg");
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_bg.jpg");
 }
 
 .layer-1 {
@@ -324,7 +351,7 @@ p {
 }
 
 .layer-4 {
-  background-image: url(images/llax/lax4.png);
+    background-image: url(images/llax/lax4.png);
 }
 
 
