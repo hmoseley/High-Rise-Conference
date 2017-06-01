@@ -57,7 +57,7 @@ table {
     font-family: GillSans; src: url('fonts/GillSans.ttc'); 
 }
 
-/* Document defaults */
+/* Document defaults 
 body {
     font-family: 'GillSans', sans-serif;
     font-size: 14px;
@@ -65,7 +65,7 @@ body {
     color: #3b3b3b;
     background-color: #666;
 }
-
+*/
 
 /* Font sizes */
 .fs1 {
@@ -128,8 +128,6 @@ body {
     height: 58px;
     width: 100%;
     background-color: rgba(255,255,255,0.8);
-    position:fixed;
-    
 }
 
 .nav-ul {
@@ -185,8 +183,30 @@ body {
     width: 400px;
 }
 
+.expand {
+    max-height: 0px;
+    overflow: hidden;
+
+    transition-property: all;
+      transition-duration: 1s;
+      transition-timing-function: ease-out;
+}
+
+.toggle:checked ~ .expand {
+    overflow-y: hidden;
+    max-height: 500px; /* approximate max height */
+
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+}
+
+.hide-checkbox {
+    display: none;
+    visibility: hidden;
+}
+
 .schedule-body {
-    
     background-color: burlywood;
     background-size: cover;
     background-position: center;
@@ -204,14 +224,12 @@ body {
 }
 
 .schedule-list {
-    
     width:400px;
     margin-left: auto;
     margin-right:auto;
 }
 
 #home-content {
-    
     height:500px;
     background-color:#D1D3D4;
 }
@@ -227,15 +245,11 @@ body {
 }
 
 #hero {
-    
     overflow: hidden;
     position: relative;
-
-    
 }
 
 #content {
-    
     height:1000px;
     background-color: #D1D3D4;
     width:80%;
@@ -244,13 +258,13 @@ body {
 }
 
 .layer {
-  background-position: bottom center;
-  background-size: auto;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 800px;
-  position: fixed;
-  z-index: -1;
+    background-position: bottom center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    position: fixed;
+    z-index: -1;
 }
 
 .first-section {
@@ -352,30 +366,7 @@ p {
 /* .........START MEDIA QUERIES............ */
 
 @media only screen and (max-width: 959px) {
-
-.expand {
-    max-height: 0px;
-    overflow: hidden;
     
-    transition-property: all;
-	  transition-duration: 1s;
-	  transition-timing-function: ease-out;
-}
-
-.toggle:checked ~ .expand {
-
-    
-    overflow-y: hidden;
-	max-height: 500px; /* approximate max height */
-
-	transition-property: all;
-	transition-duration: 1s;
-	transition-timing-function: ease-out;
-}
-
-.hide-checkbox {
-  display: none;
-  visibility: hidden;
 }
 
 @media only screen and (max-width: 959px) {
