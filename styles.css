@@ -63,8 +63,9 @@ body {
     font-size: 14px;
     line-height: 1.4;
     color: #3b3b3b;
-    background-color: #666;
+    background-color: #d6c3a3;
 }
+
 
 
 /* Font sizes */
@@ -216,12 +217,35 @@ body {
     background-color:#D1D3D4;
 }
 
+/* TRAVEL PAGE */
+
+.travelpage {
+    padding-top: 70px;
+    width:
+}
+
+.hotels {
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* START PARALLAX SCROLL */
 
 body {
   padding: 0;
   margin: 0;
-  background-color: #130d0a;
   font-family: 'Playfair Display', serif;
   color: #fff;
 }
@@ -377,6 +401,17 @@ p {
   display: none;
   visibility: hidden;
 }
+    
+    .hotels {
+        background-color: red;
+    }
+    
+    
+    
+    
+    
+    
+    
 
 @media only screen and (max-width: 959px) {
     .top-nav {
@@ -401,3 +436,4 @@ p {
         display: block;
     }
 }
+  
