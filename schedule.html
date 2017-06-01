@@ -7,7 +7,6 @@
     <title>High Rise</title>
     
     <link href="styles.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://use.typekit.net/tgv1oxq.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     
@@ -18,23 +17,39 @@
     
     <div class="top-nav">
         <ul class="nav-ul">
-            <li class="nav-li ff-futura-cond-eb fs3"><a href="#">SPEAKERS</a></li>
-            <li class="nav-li ff-futura-cond-eb fs3">SCHEDULE</li>
-            <li class="nav-li ff-futura-cond-eb fs3">ABOUT</li>
-            <li class="nav-li ff-anchorjack fs1 fc-black">High Rise</li>
-            <li class="nav-li ff-futura-cond-eb fs3">TRAVEL</li>
-            <li class="nav-li ff-futura-cond-eb fs3">MAP</li>
-            <li class="nav-li ff-futura-cond-eb fs3">REGISTER</li>
+            <li class="fl-left ff-futura-cond-eb fs3"><a href="#">SPEAKERS</a></li>
+            <li class="fl-left ff-futura-cond-eb fs3"><a href="#">SCHEDULE</a></li>
+            <li class="fl-left ff-futura-cond-eb fs3"><a href="#">ABOUT</a></li>
+            <li class="fl-left ff-anchorjack fs1 fc-black">High Rise</li>
+            <li class="fl-left ff-futura-cond-eb fs3"><a href="#">TRAVEL</a></li>
+            <li class="fl-left ff-futura-cond-eb fs3"><a href="#">MAP</a></li>
+            <li class="fl-left ff-futura-cond-eb fs3"><a href="#">REGISTER</a></li>
         </ul>
     </div>
     
-    
     <div class="top-nav-mobile">
-        <div class="hamburger-container"><img class="hamburger" src="images/assets/high-rise-hamburger.png"></div>
+        
+        <input class="toggle hide-checkbox fl-left" id="nav-dropdown" type="checkbox">
+        <label for="nav-dropdown" class="hamburger-container"><div class="hamburger-container"><img class="hamburger" src="images/assets/high-rise-hamburger.png" class="hamburger-container"></div></label>
+        
+        <ul class="expand bg-white fc-black">
+            <li class="ff-futura-cond-eb fc-black fs3 hamburger-dropdowns"><a href="#">HOME</a>
+            </li>
+            <li class="ff-futura-cond-eb fc-black fs3 hamburger-dropdowns"><a href="#">SPEAKERS</a>
+            </li>
+            <li class="ff-futura-cond-eb fc-black fs3 hamburger-dropdowns"><a href="#">SCHEDULE</a>
+            </li>
+            <li class="ff-futura-cond-eb fc-black fs3 hamburger-dropdowns"><a href="#">ABOUT</a>
+            </li>
+            <li class="ff-futura-cond-eb fc-black fs3 hamburger-dropdowns"><a href="#">TRAVEL</a>
+            </li>
+            <li class="ff-futura-cond-eb fc-black fs3 hamburger-dropdowns"><a href="#">MAP</a>
+            </li>
+            <li class="ff-futura-cond-eb fc-black fs3 hamburger-dropdowns"><a href="#">REGISTER</a>
+            </li>
+        </ul>
     </div>
     
-    
-   
     <div id="schedule-menu">
 
     </div>
@@ -63,9 +78,23 @@
         
     </div>
     
-    
-        
-        
+    <div class="footer">
+        <div class="social-wrapper">
+            <ul>
+               <li><a href="https://www.instagram.com/aigadesign/"><img src="images/assets/instagram.png" alt="instgram icon" ></a></li>
+
+               <li><a href="https://www.facebook.com/AIGAdesign/"><img src="images/assets/facebook.png" alt="instgram icon" ></a></li>
+
+               <li><a href="https://twitter.com/AIGAdesign?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img    src="images/assets/twitter.png" alt="instgram icon" ></a></li>
+
+               <li><a href="https://www.linkedin.com/company-beta/14304/"><img src="images/assets/linkedin.png" alt="facebook icon" ></a></li>
+            </ul>
+
+        </div>
+        <p class="ta-center">&#x24B8; 2018 AIGA, THE PROFESSIONAL ASSOCIATION FOR DESIGN. 
+           ALL RIGHTS RESERVED.</p> 
+    </div>
+
 </body>
 
 </html>
