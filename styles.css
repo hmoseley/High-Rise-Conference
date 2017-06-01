@@ -70,6 +70,7 @@ body {
 /* Font sizes */
 .fs1 {
     font-size: 32px;
+    letter-spacing: 5px;
 }
 
 .fs2 {
@@ -105,6 +106,9 @@ body {
 .ff-futura-cond-eb {
     font-family: "futura-pt-condensed", sans-serif;
     font-weight: 800;
+    letter-spacing: 4px;
+    color:black;
+    
 }
 
 .ff-gillsans {
@@ -210,35 +214,22 @@ body {
     margin-right:auto;
 }
 
-#home-content {
-    
-    height:500px;
-    background-color:#D1D3D4;
-}
+
 
 /* START PARALLAX SCROLL */
 
-body {
-  padding: 0;
-  margin: 0;
-  background-color: #130d0a;
-  font-family: 'Playfair Display', serif;
-  color: #fff;
-}
 
 #hero {
     
     overflow: hidden;
     position: relative;
-
-    
 }
 
 #content {
     
-    height:1000px;
+    height:977px;
     background-color: #D1D3D4;
-    width:80%;
+    width:60%;
     margin-right:auto;
     margin-left:auto;
 }
@@ -255,6 +246,7 @@ body {
 
 .first-section {
 
+    padding-top:40px;
     margin-top:50px;
     margin-left: auto;
     margin-right:auto;
@@ -283,6 +275,19 @@ body {
     background-position: center
 }
 
+
+.fourth-section {
+
+    margin-left: auto;
+    margin-right:auto;
+    background-image: url(images/sponsor-logos.png);
+    height:200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom:20px;
+}
+
+
 .text-header {
   font-size: 50px;
   text-align: center;
@@ -294,7 +299,9 @@ body {
     font-kerning: 200px;
     line-height: 200%;
     margin-bottom: 30px;
+    color:black;   
 }
+
 
 p {
   color: #ede0d5;
@@ -316,7 +323,8 @@ p {
 }
 
 .layer-2 {
-    background-image: url(images/llax/lax2.png);
+    background-image: url(images/llax/2_2.png);
+    padding-top:200px;
 }
 
 .layer-3 {
@@ -324,16 +332,17 @@ p {
 }
 
 .layer-4 {
-  background-image: url(images/llax/lax4.png);
+    background-image: url(images/llax/4_4.png);
+    padding-top:750px;
 }
-
 
 .layer-5 {
     background-image: url(images/llax/5_5.png);
 }
 
 .layer-6 { 
-    background-image: url(images/llax/lax6.png);
+    background-image: url(images/llax/6.png);
+    margin-top:400px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -356,10 +365,9 @@ p {
 .expand {
     max-height: 0px;
     overflow: hidden;
-    
     transition-property: all;
-	  transition-duration: 1s;
-	  transition-timing-function: ease-out;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
 }
 
 .toggle:checked ~ .expand {
