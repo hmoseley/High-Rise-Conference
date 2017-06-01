@@ -57,15 +57,14 @@ table {
     font-family: GillSans; src: url('fonts/GillSans.ttc'); 
 }
 
-/* Document defaults 
+/* Document defaults */
 body {
     font-family: 'GillSans', sans-serif;
     font-size: 14px;
     line-height: 1.4;
     color: #3b3b3b;
-    background-color: #666;
+    background-color: #000;
 }
-*/
 
 /* Font sizes */
 .fs1 {
@@ -229,20 +228,7 @@ body {
     margin-right:auto;
 }
 
-#home-content {
-    height:500px;
-    background-color:#D1D3D4;
-}
-
 /* START PARALLAX SCROLL */
-
-body {
-  padding: 0;
-  margin: 0;
-  background-color: #130d0a;
-  font-family: 'Playfair Display', serif;
-  color: #fff;
-}
 
 #hero {
     overflow: hidden;
@@ -358,6 +344,7 @@ p {
   #hero-mobile {
     display: block;
   }
+}
 
 
 /* .........END PARALLAX SCROLL............ */
