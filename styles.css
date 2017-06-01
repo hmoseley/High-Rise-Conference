@@ -116,10 +116,14 @@ body {
     text-transform: uppercase;
 }
 
-.ta-center {
-    text-align: center;
+.bg-white {
+    background-color: #fff;
 }
 
+.mobile-ta-center {
+
+}
+   
 .top-nav {
     height: 58px;
     width: 100%;
@@ -136,16 +140,19 @@ body {
     margin: auto;
     justify-content: space-around;
     align-items: center;
-    
+
 }
 
-.nav-li {
+.fl-left {
     float: left;
+}
+
+.fl-right {
+    float: right;
 }
 
 .top-nav-mobile {
     display: none;
-    height: 58px;
     width: 100%;
     background-color: #fff;
 }
@@ -153,6 +160,8 @@ body {
 .hamburger-container {
     width: 68px;
     height: 58px;
+    margin: 0;
+    padding: 0;
 }
 
 .hamburger {
@@ -161,24 +170,20 @@ body {
     margin: 19px;
 }
 
-@media only screen and (max-width: 959px) {
-    .top-nav {
-        display: none;
-    }
-
-    .content-container{
-        @import url(http://fonts.googleapis.com/css?family=Roboto);
-    }
-
-    .mobile-content-container{
-        display: none;
-    }
-    
-    .top-nav-mobile {
-        display: block;
-    }
+.hamburger-dropdowns {
+    width: 100vw;
+    text-align: center;
+    margin: 5px auto;
 }
 
+.mobile-content-container {
+    display: none;
+}
+
+.wrapper {
+    margin: 10px auto;
+    width: 400px;
+}
 
 .schedule-body {
     
@@ -189,8 +194,6 @@ body {
     
 }
 
-
-
 #schedule-menu {
     
     background-image: url(images/day1.png);
@@ -198,32 +201,20 @@ body {
     background-repeat: no-repeat;
     background-position: top;
     height:400px;
-    
 }
-
-
 
 .schedule-list {
     
     width:400px;
     margin-left: auto;
     margin-right:auto;
-    
-    
 }
-
-
-
 
 #home-content {
     
     height:500px;
     background-color:#D1D3D4;
 }
-
-
-
-
 
 /* START PARALLAX SCROLL */
 
@@ -252,8 +243,6 @@ body {
     margin-left:auto;
 }
 
-
-
 .layer {
   background-position: bottom center;
   background-size: auto;
@@ -264,7 +253,6 @@ body {
   z-index: -1;
 }
 
-
 .first-section {
 
     margin-top:50px;
@@ -272,7 +260,6 @@ body {
     margin-right:auto;
     width:480px
 }
-
 
 .second-section {
 
@@ -296,14 +283,10 @@ body {
     background-position: center
 }
 
-
-
-
 .text-header {
   font-size: 50px;
   text-align: center;
 }
-
 
 .statement {
     font-family: "futura-pt-condensed", sans-serif;
@@ -347,15 +330,11 @@ p {
 
 .layer-5 {
     background-image: url(images/llax/5_5.png);
-    
 }
 
 .layer-6 { 
     background-image: url(images/llax/lax6.png);
-
 }
-
-
 
 @media only screen and (max-width: 768px) {
   #hero {
@@ -372,83 +351,53 @@ p {
 
 /* .........START MEDIA QUERIES............ */
 
-
 @media only screen and (max-width: 959px) {
+
+.expand {
+    max-height: 0px;
+    overflow: hidden;
     
+    transition-property: all;
+	  transition-duration: 1s;
+	  transition-timing-function: ease-out;
+}
+
+.toggle:checked ~ .expand {
+
+    
+    overflow-y: hidden;
+	max-height: 500px; /* approximate max height */
+
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: ease-out;
+}
+
+.hide-checkbox {
+  display: none;
+  visibility: hidden;
 }
 
 @media only screen and (max-width: 959px) {
-    .content-container{
+    .top-nav {
+        display: none;
+    }
+
+    .content-container {
+
+    }
+
+    .top-nav-mobile {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 959px) {
+    .content-container {
         display: none;
     }
     
-    .mobile-content-container{
-        display: inline-block;
-    }
-    
-    @import url(http://fonts.googleapis.com/css?family=Roboto);
-    body {
-        font-family: 'GillSans', sans-serif;
-        font-size: 12pt;
-        color: #fff;
-        background: #3498db;
-    }
-    span{
-    font-size: 12pt;
-    font-family: 'GillSans', sans-serif;
-    }
-
-    .wrapper {
-    margin: 10% auto;
-    width: 400px;
-    }
-
-    ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    }
-
-    label {
-    display: block;
-    cursor: pointer;
-    padding: 10px;
-    border: 1px solid #fff;
-    border-bottom: none;
-    }
-
-    label:hover {
-    background: #26C281;
-    }
-
-    label.last {
-    border-bottom: 1px solid #fff;
-    }   
-
-    ul ul li {
-    padding: 10px;
-    background: #59ABE3;
-    }
-
-    input[type="checkbox"] {
-    position: absolute;
-    left: -9999px;
-    }
-
-    input[type="checkbox"] ~ ul {
-    height: 0;
-    transform: scaleY(0);
-    }
-
-    input[type="checkbox"]:checked ~ ul {
-    height: 100%;
-    transform-origin: top;
-    transition: transform .2s ease-out;
-    transform: scaleY(1);
-    }
-
-    input[type="checkbox"]:checked + label {
-    background: #26C281;
-    border-bottom: 1px solid #fff;
+    .mobile-content-container {
+        display: block;
     }
 }
