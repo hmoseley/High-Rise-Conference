@@ -127,7 +127,9 @@ body {
 .top-nav {
     height: 58px;
     width: 100%;
-    background-color: #fff;
+    background-color: rgba(255,255,255,0.8);
+    position:fixed;
+    
 }
 
 .nav-ul {
@@ -183,13 +185,181 @@ body {
     width: 400px;
 }
 
+.schedule-body {
+    
+    background-color: burlywood;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    
+}
+
+#schedule-menu {
+    
+    background-image: url(images/day1.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height:400px;
+}
+
+.schedule-list {
+    
+    width:400px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+#home-content {
+    
+    height:500px;
+    background-color:#D1D3D4;
+}
+
+/* START PARALLAX SCROLL */
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #130d0a;
+  font-family: 'Playfair Display', serif;
+  color: #fff;
+}
+
+#hero {
+    
+    overflow: hidden;
+    position: relative;
+
+    
+}
+
+#content {
+    
+    height:1000px;
+    background-color: #D1D3D4;
+    width:80%;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.layer {
+  background-position: bottom center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 800px;
+  position: fixed;
+  z-index: -1;
+}
+
+.first-section {
+
+    margin-top:50px;
+    margin-left: auto;
+    margin-right:auto;
+    width:480px
+}
+
+.second-section {
+
+    margin-left: auto;
+    margin-right:auto;
+    background-image: url(images/tickets-here.png);
+    height:300px;
+    width:350px;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.third-section {
+
+    margin-left: auto;
+    margin-right:auto;
+    background-image: url(images/register-now.png);
+    height:200px;
+    width:400px;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.text-header {
+  font-size: 50px;
+  text-align: center;
+}
+
+.statement {
+    font-family: "futura-pt-condensed", sans-serif;
+    font-size:25px;
+    font-kerning: 200px;
+    line-height: 200%;
+    margin-bottom: 30px;
+}
+
+p {
+  color: #ede0d5;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+#hero, .layer {
+  min-height: 800px;
+}
+
+.layer-bg {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_bg.jpg");
+}
+
+.layer-1 {
+    background-image: url(images/llax/lax1.png);
+    background-position: left bottom;
+}
+
+.layer-2 {
+    background-image: url(images/llax/lax2.png);
+}
+
+.layer-3 {
+    background-image: url(images/llax/lax3.png);
+}
+
+.layer-4 {
+  background-image: url(images/llax/lax4.png);
+}
+
+
+.layer-5 {
+    background-image: url(images/llax/5_5.png);
+}
+
+.layer-6 { 
+    background-image: url(images/llax/lax6.png);
+}
+
+@media only screen and (max-width: 768px) {
+  #hero {
+    display: none;
+  }
+
+  #hero-mobile {
+    display: block;
+  }
+
+
+/* .........END PARALLAX SCROLL............ */
+
+
+/* .........START MEDIA QUERIES............ */
+
+@media only screen and (max-width: 959px) {
+
 .expand {
     max-height: 0px;
     overflow: hidden;
     
     transition-property: all;
-	transition-duration: 1s;
-	transition-timing-function: ease-out;
+	  transition-duration: 1s;
+	  transition-timing-function: ease-out;
 }
 
 .toggle:checked ~ .expand {
