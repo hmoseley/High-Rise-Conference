@@ -162,10 +162,36 @@ a:hover {
     float: right;
 }
 
-.top-nav-mobile {
+.top-nav-filler {
+    width: 100%;
+    height: 58px;
+}
+
+.top-nav-bg-mobile {
     display: none;
     width: 100%;
     background-color: #fff;
+    position: fixed;
+    top: 0;
+    height: 58px;
+}
+
+.top-nav-mobile {
+    display: none;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.header-nav {
+    margin: auto;
+    width: 200px;
+    text-align: center;
+    position: fixed;
+    margin-top: 16px;
+    left: 0;
+    right: 0;
+    display: none;
 }
 
 .hamburger-container {
@@ -216,27 +242,51 @@ a:hover {
     visibility: hidden;
 }
 
-.schedule-body {
-    background-color: burlywood;
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat;
-    
-}
-
-#schedule-menu {
-    
+.day-menu {
     background-image: url(images/day1.png);
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     height:400px;
-    margin-top: 30px;
 }
 
-.schedule-list {
-    width:400px;
-    margin-left: auto;
-    margin-right:auto;
+.arrow-placement {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.arrow-img {
+    height: 25px;
+    width: auto;
+    margin: auto;
+}
+
+.arrow-button {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #000;
+}
+
+.arrow-button img:last-child {
+    display: none;
+}
+
+.arrow-button:hover img:first-child {
+    display: none;
+}
+
+.arrow-button:hover img:last-child {
+    display: block;
+}
+
+.schedule-container {
+    max-width: 200px;
+    margin: auto;
 }
 
 /* Footer-Holland */
@@ -400,8 +450,16 @@ p {
     .top-nav {
         display: none;
     }
-
+    
+    .top-nav-bg-mobile {
+        display: block;
+    }
+    
     .top-nav-mobile {
+        display: block;
+    }
+    
+    .header-nav {
         display: block;
     }
 }
