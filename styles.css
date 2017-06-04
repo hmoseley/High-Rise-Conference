@@ -105,7 +105,11 @@ a {
 }
 
 .fc-orange {
-    color: darkorange;
+    color: #cd562a;
+}
+
+.fc-green {
+    color: #699043;
 }
 
 /* Font families */
@@ -224,6 +228,35 @@ a:hover {
     display: none;
     margin: 10px auto;
     width: 400px;
+}
+
+.margin-25 {
+    margin: 25px auto;
+}
+
+.member-prices {
+    border-bottom-width: 1px;
+    padding: 5px;
+    width: 240px;
+    margin: 25px auto 5px auto;
+    border-style: solid;
+    border-bottom-color: #cd562a;
+}
+
+.nonmember-prices {
+    border-bottom-width: 1px;
+    padding: 5px;
+    width: 240px;
+    margin: auto;
+    margin: 25px auto 5px auto;
+    border-style: solid;
+    border-bottom-color: #699043;
+}
+
+.register-container {
+    width: 230px;
+    margin: 0 auto 25px auto;
+    padding: 5px
 }
 
 .expand {
