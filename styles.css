@@ -134,7 +134,8 @@ a {
 .mobile-ta-center {
 
 }
-   
+
+
 .top-nav {
     height: 58px;
     width: 100%;
@@ -145,6 +146,7 @@ a {
 }
 
 .nav-ul {
+    
     height: 58px;
     width: 100%;
     max-width: 960px;
@@ -152,8 +154,8 @@ a {
     margin: auto;
     justify-content: space-around;
     align-items: center;
-
 }
+
 a:hover {
     color:#CD562A;
 }
@@ -242,18 +244,12 @@ a:hover {
 /* START PARALLAX SCROLL */
 
 
-
 #hero {
-    
-    overflow: hidden;
-    position: relative;
+    overflow: hidden; 
 }
 
 #content {
-    
-    height:977px;
-    background-color: #D1D3D4;
-    width:60%;
+    height:1100px;
     margin-right:auto;
     margin-left:auto;
 }
@@ -268,20 +264,49 @@ a:hover {
   z-index: -1;
 }
 
+
+.title-section {
+ 
+    width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#title-conference {
+    
+    font-family: AnchorJack;
+    color:black;
+    letter-spacing: 3.7px;
+    font-size: 45px;
+    text-align: center;
+}
+
+
 .first-section {
 
-    padding-top:40px;
     margin-top:50px;
     margin-left: auto;
     margin-right:auto;
-    width:480px
+    width:480px;
 }
+
+.date-section {
+    margin-left: auto;
+    margin-right:auto;
+    background-image: url(images/dates-box.png);
+    height:200px;
+    width:450px;
+    background-repeat: no-repeat;
+    background-position: center
+    
+}
+
 
 .second-section {
 
     margin-left: auto;
     margin-right:auto;
-    background-image: url(images/tickets-here.png);
+    background-image: url(images/tickets-now-orange.png);
     height:300px;
     width:350px;
     background-repeat: no-repeat;
@@ -290,21 +315,44 @@ a:hover {
 
 .third-section {
 
+    margin-top: 50px;
+    margin-bottom: 70px;
     margin-left: auto;
     margin-right:auto;
-    background-image: url(images/register-now.png);
-    height:200px;
-    width:400px;
+    height:55px;
+    width:500px;
     background-repeat: no-repeat;
-    background-position: center
+    background-position: center;
+    border: 2px;
+    border-color: rgba(0,0,0,0.3);
+    border-style: solid;
+    
 }
 
 
+.third-section:hover {
+    
+    background-color:mediumseagreen;
+
+}
+
+
+#register-now {
+    
+    font-family: AnchorJack;
+    color: black;
+    letter-spacing: 3px;
+    font-size: 35px;
+    text-align: center;
+}
+
+
+      
 .fourth-section {
 
     margin-left: auto;
     margin-right:auto;
-    background-image: url(images/sponsor-logos.png);
+    background-image: url(images/sponsors.png);
     height:200px;
     background-repeat: no-repeat;
     background-position: center;
@@ -318,8 +366,8 @@ a:hover {
 }
 
 .statement {
-    font-family: "futura-pt-condensed", sans-serif;
-    font-size:25px;
+    font-family:"futura-pt-condensed", sans-serif;
+    font-size:19px;
     font-kerning: 200px;
     line-height: 200%;
     margin-bottom: 30px;
@@ -333,12 +381,13 @@ p {
   line-height: 150%;
 }
 
+
 #hero, .layer {
-  min-height: 800px;
+    min-height: 800px;
 }
 
 .layer-bg {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_bg.jpg");
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_bg.jpg"); 
 }
 
 .layer-1 {
@@ -365,8 +414,9 @@ p {
 }
 
 .layer-6 { 
-    background-image: url(images/llax/6.png);
-    margin-top:400px;
+    background-image: url(images/llax/long-ass-cloud.png);
+    padding-top: 1500px;
+
 }
 
 @media only screen and (max-width: 768px) {
