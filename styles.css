@@ -106,7 +106,11 @@ a {
 }
 
 .fc-orange {
-    color: darkorange;
+    color: #cd562a;
+}
+
+.fc-green {
+    color: #699043;
 }
 
 /* Font families */
@@ -131,8 +135,8 @@ a {
     background-color: #fff;
 }
 
-.mobile-ta-center {
-
+.ta-center {
+    text-align: center;
 }
 
 
@@ -142,7 +146,6 @@ a {
     background-color: rgba(255,255,255,0.8);
     position:fixed;
     top: 0;
-    
 }
 
 .nav-ul {
@@ -168,10 +171,36 @@ a:hover {
     float: right;
 }
 
-.top-nav-mobile {
+.top-nav-filler {
+    width: 100%;
+    height: 58px;
+}
+
+.top-nav-bg-mobile {
     display: none;
     width: 100%;
     background-color: #fff;
+    position: fixed;
+    top: 0;
+    height: 58px;
+}
+
+.top-nav-mobile {
+    display: none;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.header-nav {
+    margin: auto;
+    width: 200px;
+    text-align: center;
+    position: fixed;
+    margin-top: 16px;
+    left: 0;
+    right: 0;
+    display: none;
 }
 
 .hamburger-container {
@@ -193,41 +222,165 @@ a:hover {
     margin: 5px auto;
 }
 
-.mobile-content-container {
-    display: none;
+.about-wrapper {
+    max-width: 720px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.wrapper {
+.mobile-content-container {
+    display: none;
     margin: 10px auto;
     width: 400px;
 }
 
-.schedule-body {
-    
-    background-color: burlywood;
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat;
-    
+.margin-25 {
+    margin: 25px auto;
 }
 
-#schedule-menu {
-    
+.member-prices {
+    border-bottom-width: 1px;
+    padding: 5px;
+    width: 240px;
+    margin: 25px auto 5px auto;
+    border-style: solid;
+    border-bottom-color: #cd562a;
+}
+
+.nonmember-prices {
+    border-bottom-width: 1px;
+    padding: 5px;
+    width: 240px;
+    margin: auto;
+    margin: 25px auto 5px auto;
+    border-style: solid;
+    border-bottom-color: #699043;
+}
+
+.register-container {
+    width: 230px;
+    margin: 0 auto 25px auto;
+    padding: 5px
+}
+
+.expand {
+    max-height: 0px;
+    overflow: hidden;
+
+    transition-property: all;
+      transition-duration: 1s;
+      transition-timing-function: ease-out;
+}
+
+.toggle:checked ~ .expand {
+    overflow-y: hidden;
+    max-height: 500px; /* approximate max height */
+
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+}
+
+.hide-checkbox {
+    display: none;
+    visibility: hidden;
+}
+
+.day-1-menu {
     background-image: url(images/day1.png);
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     height:400px;
-    margin-top: 30px;
 }
 
-.schedule-list {
-    
-    width:400px;
-    margin-left: auto;
-    margin-right:auto;
+.day-2-menu {
+    background-image: url(images/day2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:400px;
 }
 
+.day-3-menu {
+    background-image: url(images/day3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:400px;
+}
 
+.arrow-placement {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.arrow-img {
+    height: 25px;
+    width: auto;
+    margin: auto;
+}
+
+.arrow-button {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #000;
+}
+
+.arrow-button img:last-child {
+    display: none;
+}
+
+.arrow-button:hover img:first-child {
+    display: none;
+}
+
+.arrow-button:hover img:last-child {
+    display: block;
+}
+
+.schedule-container {
+    max-width: 200px;
+    margin: 0 auto 30px auto;
+}
+
+.map-img {
+    margin: 30px auto;
+    width: 75vw;
+    max-width: 400px;
+    height: auto;
+    display: block;
+}
+
+/* Footer-Holland */
+
+.footer{
+    background-color: rgba(255,255,255,0.8);
+    width: 100%;
+    height: 80px;
+}
+
+.footer p {
+    font-size: 10px;
+}
+
+.social-wrapper {
+    height: 50px;
+    width: 200px;
+    margin: auto;
+}
+
+.footer img {
+    height: 30px;
+    display: inline-block;
+    float: left;
+    padding-top: 10px;
+    margin: 0 10px;
+}
 
 .content-container {
     margin-top: 100px;
@@ -236,13 +389,8 @@ a:hover {
     margin-left: auto;
     height: auto;
 }
-.speak {
-    float:left;
-    padding-right: 30px;
-}
 
 /* START PARALLAX SCROLL */
-
 
 #hero {
     overflow: hidden; 
@@ -255,13 +403,13 @@ a:hover {
 }
 
 .layer {
-  background-position: bottom center;
-  background-size: auto;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 800px;
-  position: fixed;
-  z-index: -1;
+    background-position: bottom center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    position: fixed;
+    z-index: -1;
 }
 
 
@@ -283,7 +431,6 @@ a:hover {
 
 
 .first-section {
-
     margin-top:50px;
     margin-left: auto;
     margin-right:auto;
@@ -303,7 +450,6 @@ a:hover {
 
 
 .second-section {
-
     margin-left: auto;
     margin-right:auto;
     background-image: url(images/tickets-now-orange.png);
@@ -314,7 +460,6 @@ a:hover {
 }
 
 .third-section {
-
     margin-top: 50px;
     margin-bottom: 70px;
     margin-left: auto;
@@ -331,25 +476,19 @@ a:hover {
 
 
 .third-section:hover {
-    
     background-color:mediumseagreen;
-
 }
 
 
 #register-now {
-    
     font-family: AnchorJack;
     color: black;
     letter-spacing: 3px;
     font-size: 35px;
     text-align: center;
 }
-
-
-      
+ 
 .fourth-section {
-
     margin-left: auto;
     margin-right:auto;
     background-image: url(images/sponsors.png);
@@ -358,7 +497,6 @@ a:hover {
     background-position: center;
     margin-bottom:20px;
 }
-
 
 .text-header {
   font-size: 50px;
@@ -374,11 +512,9 @@ a:hover {
     color:black;   
 }
 
-
 p {
-  color: #ede0d5;
-  font-size: 18px;
-  line-height: 150%;
+    font-size: 18px;
+    line-height: 150%;
 }
 
 
@@ -427,45 +563,27 @@ p {
   #hero-mobile {
     display: block;
   }
+}
 
 
 /* .........END PARALLAX SCROLL............ */
 
 
 /* .........START MEDIA QUERIES............ */
-
-@media only screen and (max-width: 959px) {
-
-.expand {
-    max-height: 0px;
-    overflow: hidden;
-    transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function: ease-out;
-}
-
-.toggle:checked ~ .expand {
-
-    
-    overflow-y: hidden;
-	max-height: 500px; /* approximate max height */
-
-	transition-property: all;
-	transition-duration: 1s;
-	transition-timing-function: ease-out;
-}
-
-.hide-checkbox {
-  display: none;
-  visibility: hidden;
-}
-
 @media only screen and (max-width: 959px) {
     .top-nav {
         display: none;
     }
-
+    
+    .top-nav-bg-mobile {
+        display: block;
+    }
+    
     .top-nav-mobile {
+        display: block;
+    }
+    
+    .header-nav {
         display: block;
     }
 }
