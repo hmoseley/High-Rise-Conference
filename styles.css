@@ -93,7 +93,7 @@ a {
 }
 
 .fs5 {
-    font-size: 12p;
+    font-size: 12px;
 }
 
 /* Font colors */
@@ -397,7 +397,6 @@ a:hover {
 }
 
 #content {
-    height:1100px;
     margin-right:auto;
     margin-left:auto;
 }
@@ -467,8 +466,8 @@ a:hover {
     height:55px;
     width:500px;
     background-repeat: no-repeat;
+    background-color:dodgerblue;
     background-position: center;
-    border: 2px;
     border-color: rgba(0,0,0,0.3);
     border-style: solid;
     
@@ -476,7 +475,7 @@ a:hover {
 
 
 .third-section:hover {
-    background-color:mediumseagreen;
+    background-color:forestgreen;
 }
 
 
@@ -505,6 +504,7 @@ a:hover {
 
 .statement {
     font-family:"futura-pt-condensed", sans-serif;
+    font-weight: 800;
     font-size:19px;
     font-kerning: 200px;
     line-height: 200%;
