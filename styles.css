@@ -282,27 +282,6 @@ a:hover {
     visibility: hidden;
 }
 
-.day-1-menu {
-    background-image: url(images/day1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height:400px;
-}
-
-.day-2-menu {
-    background-image: url(images/day2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height:400px;
-}
-
-.day-3-menu {
-    background-image: url(images/day3.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height:400px;
-}
-
 .arrow-placement {
     display: flex;
     width: 30%;
@@ -502,31 +481,111 @@ p {
 /* .........END PARALLAX SCROLL............ */
 
 
+.menu-container {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    height: 400px;
+}
+
+
+.day-1-menu-mobile {
+    display: none;
+    background-image: url(images/day1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+    left: 100%;
+    margin-left: -200%;
+}
+
+.day-1-menu {
+    background-image: url(images/day1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+    left: 100%;
+    margin-left: -200%;
+}
+
+.day-2-menu {
+    background-image: url(images/day2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:400px;
+}
+
+.day-3-menu {
+    background-image: url(images/day3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:400px;
+}
+
+
+.bg-img-container {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    height: 1334px;
+}
+
+.bg-img-4k {
+    max-width: 4000px;
+    position: relative;
+    left: 100%;
+    margin-left: -200%;
+}
+
+.bg-img-2k {
+    display: none;
+}
+
+.bg-img-1600 {
+    display:none;
+}
+
+.bg-img-1200 {
+    display: none;
+}
+
 /* .........START MEDIA QUERIES............ */
 @media only screen and (max-width: 959px) {
     .top-nav {
         display: none;
     }
-    
+
     .top-nav-bg-mobile {
         display: block;
     }
-    
+
     .top-nav-mobile {
         display: block;
     }
-    
+
     .header-nav {
         display: block;
     }
-}
 
-@media only screen and (max-width: 959px) {
     .content-container {
         display: none;
     }
-    
+
     .mobile-content-container {
         display: block;
+    }
+
+    .day-1-menu {
+        display: none;
+    }
+
+    .day-1-menu-mobile {
+        display: inline-block;
+    }
+
+    .menu-container {
+        height: 200px;
     }
 }
